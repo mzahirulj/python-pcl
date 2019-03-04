@@ -259,7 +259,17 @@ Common setting
     python setup.py build_ext -i
     
     python setup.py install
-
+ 3. install python Anaconda prompt
+        Conda create -n ipk #neue Umgebung erstellen. 
+        conda activate ipk #Umgebung activieren
+        conda config --add channels conda-forge
+        conda install -c jithinpr2 gtk3 
+        conda install -c anaconda nbconvert 
+        conda install -c conda-forge ipython 
+        conda install -c sirokujira python-pcl 
+        conda install -c sirokujira vtk
+        
+"It does not work with 'pyvtk' together . Because of different dependency and Vesion"
 
 Build & Test Status
 ===================
