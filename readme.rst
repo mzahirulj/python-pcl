@@ -101,8 +101,15 @@ and Windows with
  * pcl 1.8.1(VS2015)
  * Cython <= 0.25.2
  * Gtk+
+ 
+ and Windows with 
+ *Anaconda (conda 4.6.7) - Python 3.6.7
+ *pcl 1.8.1 
+ *python-pcl 0.3.0
+ *cython 0.29.6
+ *Gtk3 
 
-Installation
+ Installation
 ============
 
 Linux(Ubuntu)
@@ -186,6 +193,19 @@ circumvent:
 
 Windows
 -------
+
+Using Anaconda Prompt
+---------------------
+	->conda create -n env_Name
+ 		->activate env_Name
+	->conda config --add channels conda-forge
+ 		->conda install -c jithinpr2 gtk3 
+ 	->conda install -c conda-forge ipython  
+ 		->conda install -c sirokujira python-pcl 
+ 	->pip install pyvtk
+ 		->pip install vtk
+ 	->conda install -c conda-forge spyder
+ *** please following sequence , otherwise may be get Error ! ***
 
 Using pip with a precompiled wheel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
